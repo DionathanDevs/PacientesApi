@@ -1,7 +1,8 @@
-dotnet new web -n PacientesApi
-cd PacientesApi
+dotnet add package Microsoft.EntityFrameworkCore.Tools
 dotnet add package Microsoft.EntityFrameworkCore
 dotnet add package Microsoft.EntityFrameworkCore.Sqlite
+dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet add package Swashbuckle.AspNetCore
 
 DOCUMENTAÇÃO TÉCNICA DO PROJETO -- API DE CADASTRO DE PACIENTES
 
