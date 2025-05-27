@@ -27,9 +27,17 @@ Para rodar este projeto, você precisará ter instalado:
     ```bash
     dotnet restore
     ```
+    **Caso não funcione usando o restore, utilizar os seguintes comandos no cmd:
+    ```bash
+    dotnet add package Microsoft.EntityFrameworkCore.Tools
+    dotnet add package Microsoft.EntityFrameworkCore
+    dotnet add package Microsoft.EntityFrameworkCore.Sqlite
+    dotnet add package Microsoft.EntityFrameworkCore.Design
+    dotnet add package Swashbuckle.AspNetCore
+    ```
 
 
-3.  **Crie e aplique as migrações do Entity Framework Core:**
+4.  **Crie e aplique as migrações do Entity Framework Core:**
     ```bash
     dotnet ef migrations add InitialCreate
     dotnet ef database update
