@@ -44,6 +44,7 @@ app.UseHttpsRedirection();
 
 // Mapear endpoints
 app.MapGetPacientes();
+app.MapGetPacienteById(); 
 app.MapCreatePaciente();
 app.MapUpdatePaciente();
 app.MapDeletePaciente();
