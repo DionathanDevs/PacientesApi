@@ -34,8 +34,6 @@ Para rodar este projeto, você precisará ter instalado:
     dotnet ef migrations add InitialCreate
     dotnet ef database update
     ```
-    Isso criará o banco de dados SQLite e o populará com 10 registros iniciais de pacientes[cite: 1], conforme configurado em `Program.cs`.
-
 ## Executando a Aplicação
 
 Para iniciar a API, navegue até o diretório raiz do projeto e execute:
