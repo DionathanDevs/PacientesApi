@@ -12,7 +12,7 @@ public static class GetPacienteById
         app.MapGet("/pacientes/{id}", async ([FromRoute] int id, [FromServices] AppDbContext context) =>
         {
             var paciente = await context.Pacientes.FirstOrDefaultAsync(p => p.Id == id);
-            return paciente is not null ? Results.Ok(paciente) : Results.NotFound();
+            return paciente is not null ? Results.Ok(paciente) : Results.NotFound(new { mensagem = $"Paciente com ID {id} não encontrado." });
         })
         .WithName("GetPacienteById")
         .Produces<Paciente>(StatusCodes.Status200OK)
