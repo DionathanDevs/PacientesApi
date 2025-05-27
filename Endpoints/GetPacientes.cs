@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PacientesApi.Data;
-using PacientesApi.Models; // Para a classe Paciente
+using PacientesApi.Models; 
 
 
 namespace PacientesApi.Endpoints;
