@@ -1,30 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Documents\\PacientesApi\\PacientesApi.csproj": {}
+    "C:\\Users\\User\\Documents\\Nova pasta\\PacientesApi\\PacientesApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Documents\\PacientesApi\\PacientesApi.csproj": {
+    "C:\\Users\\User\\Documents\\Nova pasta\\PacientesApi\\PacientesApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Documents\\PacientesApi\\PacientesApi.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Documents\\Nova pasta\\PacientesApi\\PacientesApi.csproj",
         "projectName": "PacientesApi",
-        "projectPath": "C:\\Users\\User\\Documents\\PacientesApi\\PacientesApi.csproj",
+        "projectPath": "C:\\Users\\User\\Documents\\Nova pasta\\PacientesApi\\PacientesApi.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Documents\\PacientesApi\\obj\\",
+        "outputPath": "C:\\Users\\User\\Documents\\Nova pasta\\PacientesApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net9.0"
+          "net8.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net9.0": {
-            "targetAlias": "net9.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -37,30 +37,29 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[9.0.5, )"
+              "version": "[8.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.5, )"
+              "version": "[8.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[9.0.5, )"
+              "version": "[8.0.4, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[8.1.1, )"
+              "version": "[6.5.0, )"
             }
           },
           "imports": [
@@ -82,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.410/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -20,6 +20,8 @@ public static class PutPaciente
             paciente.Telefone = pacienteAtualizado.Telefone;
             paciente.Email = pacienteAtualizado.Email;
             paciente.Endereco = pacienteAtualizado.Endereco;
+             paciente.TipoSanguineo = pacienteAtualizado.TipoSanguineo;
+            paciente.Alergias = pacienteAtualizado.Alergias;
 
             await context.SaveChangesAsync();
             return Results.NoContent();

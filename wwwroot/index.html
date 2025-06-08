@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API de Pacientes</title>
+</head>
+<body>
+    <header>
+        <h1>API de Busca de Pacientes</h1>
+    </header>
+
+    <section>
+        <div class="box-busca">
+            <h2>Buscar Pacientes</h2>
+            <input type="number" placeholder="ID" id="filtroId">
+            <input type="text" placeholder="Nome" id="filtroNome">
+            <input type="text" placeholder="CPF" id="filtroCpf">
+            <input type="text" placeholder="Telefone" id="filtroTelefone">
+            <button onclick="filtrarPacientes()">Buscar</button>
+        </div>
+
+        <div class="box-cadastro">
+            <h2>Cadastrar Pacientes</h2>
+            <input type="hidden" id="cad-id">
+            <input type="text" placeholder="Nome" id="nome">
+            <input type="text" placeholder="CPF" id="cpf">
+            <input type="date" placeholder="Data de Nascimento" id="dataNascimento">
+            <input type="email" placeholder="email" id="email">
+            <input type="text" placeholder="Telefone" id="telefone">
+            <input type="text" placeholder="Endereço" id="endereco">
+            <select id="tipoSanguineo" name="tipoSanguineo">
+                <option value="">Tipo Sanguineo</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select>
+            <input type="text" placeholder="Alergias" id="alergias">
+            <button onclick="adicionarOuAtualizarPaciente()">Cadastrar</button>
+        </div>
+
+        <div class="box-lista">
+            <h2>Lista de Pacientes</h2>
+            <button onclick="carregarPacientes()">🔁 Atualizar Lista</button>
+           <table border="1">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nome</th>
+      <th>CPF</th>
+      <th>Telefone</th>
+      <th>Data de Nascimento</th>
+      <th>Endereço</th>
+      <th>Tipo Sanguíneo</th>
+      <th>Alergias</th>
+      <th>Ações</th>
+    </tr>
+  </thead>
+  <tbody id="tabelaPacientes"></tbody>
+</table>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

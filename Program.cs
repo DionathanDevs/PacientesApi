@@ -11,21 +11,29 @@ builder.Services.AddCors();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
 // Configuração do DbContext
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
 
+if (app.Environment.IsDevelopment())
+{
+    
+    app.UseDeveloperExceptionPage();
+    
+}
+
+app.UseHttpsRedirection();
 
 
-// Configure na ordem CORRETA:
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
     
-    // Adicione esta política (opcional para desenvolvimento)
+
     app.UseCors(builder => builder
         .AllowAnyOrigin()
         .AllowAnyMethod()
@@ -34,13 +42,10 @@ if (app.Environment.IsDevelopment())
 
 
 
-// Configuração do pipeline
-if (app.Environment.IsDevelopment())
-{
-    app.UseDeveloperExceptionPage();
-}
 
-app.UseHttpsRedirection();
+
+app.UseStaticFiles(); // Habilita o middleware para servir arquivos estáticos
+app.UseDefaultFiles();
 
 // Mapear endpoints
 app.MapGetPacientes();
@@ -48,6 +53,7 @@ app.MapGetPacienteById();
 app.MapCreatePaciente();
 app.MapUpdatePaciente();
 app.MapDeletePaciente();
+app.MapFallbackToFile("index.html");
 
 // Configuração inicial do banco de dados
 await InitializeDatabase(app);
