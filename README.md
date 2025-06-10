@@ -1,19 +1,30 @@
-# 📚 PacientesAPI - Sistema de Gerenciamento de Pacientes
+# 🏥 Pacientes API
 
-API RESTful para gestão de registros médicos desenvolvida em .NET 9.0.
+API REST para cadastro e gerenciamento de pacientes, desenvolvida com **ASP.NET Core 8.0**, **Entity Framework Core** e **SQLite**.
 
-## Sumário
-1. [Sobre o Projeto](#sobre-o-projeto)
-2. [Pré-requisitos](#pré-requisitos)
-3. [Configuração Inicial](#configuração-inicial)
+---
+
+## 🚀 Funcionalidades
+
+- ✅ Listar todos os pacientes
+- 🔍 Obter paciente por ID
+- ➕ Cadastrar novo paciente
+- ✏️ Atualizar informações de um paciente
+- ❌ Deletar paciente
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- [ASP.NET Core 8.0](https://learn.microsoft.com/aspnet/core)
+- [Entity Framework Core](https://learn.microsoft.com/ef/core/)
+- [SQLite](https://www.sqlite.org/)
+- [Swagger (Swashbuckle)](https://swagger.io/)
+- [C# 12](https://learn.microsoft.com/dotnet/csharp/whats-new/csharp-12)
+
 
 ## Sobre o Projeto
 O objetivo deste projeto é desenvolver uma API voltada à gestão de registros de pacientes, utilizando tecnologias atuais de desenvolvimento web. A aplicação foi concebida para possibilitar operações como consulta, cadastro, atualização e exclusão de dados de pacientes de forma estruturada e eficiente. Este modelo é aplicável em contextos de saúde, onde é fundamental garantir agilidade na localização, registro e manutenção de informações por parte dos usuários responsáveis pelo controle dos prontuários.
-
-## Pré-requisitos
-Para rodar este projeto, você precisará ter instalado:
-- [.NET 9.0 SDK](https://dotnet.microsoft.com/download) (ou versão compatível mais recente)
-- Gerenciador de pacotes NuGet
 
 ## Configuração Inicial
 
@@ -27,23 +38,3 @@ Para rodar este projeto, você precisará ter instalado:
     ```bash
     dotnet restore
     ```
-    **Caso não funcione usando o restore, utilizar os seguintes comandos no cmd:
-    ```bash
-    dotnet add package Microsoft.EntityFrameworkCore.Tools
-    dotnet add package Microsoft.EntityFrameworkCore
-    dotnet add package Microsoft.EntityFrameworkCore.Sqlite
-    dotnet add package Microsoft.EntityFrameworkCore.Design
-    dotnet add package Swashbuckle.AspNetCore
-    ```
-
-
-4.  **Crie e aplique as migrações do Entity Framework Core:**
-    ```bash
-    dotnet ef migrations add InitialCreate
-    dotnet ef database update
-    ```
-## Executando a Aplicação
-
-Para iniciar a API, navegue até o diretório raiz do projeto e execute:
-```bash
-dotnet run
