@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "f/Lz0ZVVjzFXQJLgIXb9brN+fR/I6DBTGOD8nCZPGeE=",
+  "Hash": "XrJiew8BTCLDv/3lDq1mhvSarBuCVjFhE8Ya6c0dLeY=",
   "Source": "PacientesApi",
   "BasePath": "_content/PacientesApi",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\script.js"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Documents\\Nova pasta\\PacientesApi\\wwwroot\\style.css",
+      "SourceId": "PacientesApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Documents\\Nova pasta\\PacientesApi\\wwwroot\\",
+      "BasePath": "_content/PacientesApi",
+      "RelativePath": "style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\style.css"
     }
   ]
 }

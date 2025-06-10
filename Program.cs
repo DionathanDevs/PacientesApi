@@ -41,10 +41,7 @@ if (app.Environment.IsDevelopment())
 }
 
 
-
-
-
-app.UseStaticFiles(); // Habilita o middleware para servir arquivos estáticos
+app.UseStaticFiles(); 
 app.UseDefaultFiles();
 
 // Mapear endpoints
@@ -185,7 +182,117 @@ async Task InitializeDatabase(WebApplication app)
         Endereco = "Travessa Quintino Bocaiúva, 606, Belém - PA",
         TipoSanguineo = "O+",
         Alergias = "Picada de inseto"
-    }
+    },new()
+{
+    Nome = "Luana Ribeiro",
+    CPF = "12345678901",
+    DataNascimento = new DateTime(1987, 6, 12),
+    Telefone = "(62) 98888-1111",
+    Email = "luana.ribeiro@example.com",
+    Endereco = "Rua T-63, Goiânia - GO",
+    TipoSanguineo = "B+",
+    Alergias = "Glúten"
+},
+new()
+{
+    Nome = "Eduardo Nascimento",
+    CPF = "23456789012",
+    DataNascimento = new DateTime(1979, 2, 28),
+    Telefone = "(95) 97777-2222",
+    Email = "eduardo.nascimento@example.com",
+    Endereco = "Rua das Palmeiras, Boa Vista - RR",
+    TipoSanguineo = "O-",
+    Alergias = "Nenhuma"
+},
+new()
+{
+    Nome = "Camila Farias",
+    CPF = "34567890123",
+    DataNascimento = new DateTime(1993, 3, 19),
+    Telefone = "(47) 96666-3333",
+    Email = "camila.farias@example.com",
+    Endereco = "Av. Atlântica, 707, Balneário Camboriú - SC",
+    TipoSanguineo = "AB+",
+    Alergias = "Latex"
+},
+new()
+{
+    Nome = "Thiago Melo",
+    CPF = "45678901234",
+    DataNascimento = new DateTime(1986, 10, 5),
+    Telefone = "(82) 95555-4444",
+    Email = "thiago.melo@example.com",
+    Endereco = "Rua do Farol, 200, Maceió - AL",
+    TipoSanguineo = "A-",
+    Alergias = "Frutos do mar"
+},
+new()
+{
+    Nome = "Larissa Cunha",
+    CPF = "56789012345",
+    DataNascimento = new DateTime(1991, 8, 17),
+    Telefone = "(98) 94444-5555",
+    Email = "larissa.cunha@example.com",
+    Endereco = "Av. Litorânea, 321, São Luís - MA",
+    TipoSanguineo = "B-",
+    Alergias = "Dipirona"
+},
+new()
+{
+    Nome = "Fábio Teixeira",
+    CPF = "67890123456",
+    DataNascimento = new DateTime(1972, 1, 9),
+    Telefone = "(96) 93333-6666",
+    Email = "fabio.teixeira@example.com",
+    Endereco = "Rua Cândido Mendes, 800, Macapá - AP",
+    TipoSanguineo = "O+",
+    Alergias = "Nenhuma"
+},
+new()
+{
+    Nome = "Beatriz Moraes",
+    CPF = "78901234567",
+    DataNascimento = new DateTime(1996, 4, 11),
+    Telefone = "(27) 92222-7777",
+    Email = "beatriz.moraes@example.com",
+    Endereco = "Rua da Lama, 909, Vitória - ES",
+    TipoSanguineo = "AB-",
+    Alergias = "Poeira"
+},
+new()
+{
+    Nome = "Renato Dias",
+    CPF = "89012345678",
+    DataNascimento = new DateTime(1983, 9, 6),
+    Telefone = "(73) 91111-8888",
+    Email = "renato.dias@example.com",
+    Endereco = "Rua dos Pescadores, 303, Ilhéus - BA",
+    TipoSanguineo = "A+",
+    Alergias = "Camarão"
+},
+new()
+{
+    Nome = "Isabela Martins",
+    CPF = "90123456789",
+    DataNascimento = new DateTime(1994, 5, 27),
+    Telefone = "(53) 90000-9999",
+    Email = "isabela.martins@example.com",
+    Endereco = "Av. Dom Joaquim, 707, Pelotas - RS",
+    TipoSanguineo = "B+",
+    Alergias = "Amendoim"
+},
+new()
+{
+    Nome = "Rafael Gonçalves",
+    CPF = "01234567890",
+    DataNascimento = new DateTime(1977, 12, 3),
+    Telefone = "(92) 98888-0000",
+    Email = "rafael.goncalves@example.com",
+    Endereco = "Rua do Comércio, 505, Manaus - AM",
+    TipoSanguineo = "O-",
+    Alergias = "Nenhuma"
+}
+
            
         };
 
