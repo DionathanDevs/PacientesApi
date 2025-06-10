@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XrJiew8BTCLDv/3lDq1mhvSarBuCVjFhE8Ya6c0dLeY=",
+  "Hash": "UjBp1fCnqZtGOzTvrBwwJMnoX5/lj9F2MMaRiL/Jix4=",
   "Source": "PacientesApi",
   "BasePath": "_content/PacientesApi",
   "Mode": "Default",
@@ -16,6 +16,25 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\User\\Documents\\Nova pasta\\PacientesApi\\wwwroot\\cadastro.html",
+      "SourceId": "PacientesApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Documents\\Nova pasta\\PacientesApi\\wwwroot\\",
+      "BasePath": "_content/PacientesApi",
+      "RelativePath": "cadastro.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\cadastro.html"
+    },
     {
       "Identity": "C:\\Users\\User\\Documents\\Nova pasta\\PacientesApi\\wwwroot\\index.html",
       "SourceId": "PacientesApi",
@@ -34,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Documents\\Nova pasta\\PacientesApi\\wwwroot\\relatorio.html",
+      "SourceId": "PacientesApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Documents\\Nova pasta\\PacientesApi\\wwwroot\\",
+      "BasePath": "_content/PacientesApi",
+      "RelativePath": "relatorio.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\relatorio.html"
     },
     {
       "Identity": "C:\\Users\\User\\Documents\\Nova pasta\\PacientesApi\\wwwroot\\script.js",

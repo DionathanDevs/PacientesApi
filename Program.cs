@@ -50,7 +50,9 @@ app.MapGetPacienteById();
 app.MapCreatePaciente();
 app.MapUpdatePaciente();
 app.MapDeletePaciente();
+app.MapRelatorioEndpoint();
 app.MapFallbackToFile("index.html");
+
 
 // Configuração inicial do banco de dados
 await InitializeDatabase(app);

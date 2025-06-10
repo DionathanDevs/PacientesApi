@@ -55,6 +55,15 @@ section {
 .box-list-get{
     padding: 1em;
 }
+.link{
+    text-decoration: none;
+    color: white;
+}
+
+.chart-container {
+      width: 100%;
+      margin: 30px 0;
+    }
 
 select {
     width: 100%;

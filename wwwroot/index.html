@@ -17,10 +17,13 @@
   <body>
     <header>
       <h1>Central de Pacientes <i class="fa-solid fa-house-medical"></i></h1>
+        
     </header>
 
     <section>
-      <div class="box-get">
+ <a class="button-body" style="text-decoration: none; color: white; margin-bottom: 1em; text-align: center; justify-content: center; padding: 1em;" href="relatorio.html">Relatório</a>
+     <a class="button-body" style="text-decoration: none; color: white; margin-bottom: 1em; text-align: center; justify-content: center; padding: 1em;" href="cadastro.html">Cadastrar Paciente</a>
+      <div class="box-get" style="margin-top: 1em;">
         <div class="header-form">
         <h2>Buscar Pacientes</h2>
         <p>Preencha os dados do paciente</p>
@@ -48,9 +51,33 @@
         </div>
       </div>
 
-      <div class="box-post-put" id="formCadastro">
+     
+      <div class="box-list-get">
         <div class="header-form">
-        <h2>Cadastrar Pacientes</h2>
+        <h2>Relatório de Pacientes</h1>
+        <p><strong>Total de Pacientes:</strong> <span id="totalPacientes"></span></p>
+        </div>
+        <button  class= "button-body" onclick="carregarPacientes()">Atualizar Registros <i class="fa-solid fa-rotate-right"></i></button>
+        <table border="1" id="secaoTabela">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nome</th>
+              <th>CPF</th>
+              <th>Telefone</th>
+              <th>Data de Nascimento</th>
+              <th>Endereço</th>
+              <th>Tipo Sanguíneo</th>
+              <th>Alergias</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="tabelaPacientes"></tbody>
+        </table>
+      </div>
+       <div class="box-post-put" id="formCadastro">
+        <div class="header-form">
+        <h2>Editar Pacientes</h2>
         <p>Preencha os dados do paciente</p>
         </div>
         <div class="campos-form">
@@ -105,29 +132,8 @@
         <button class= "button-body" id="btn-buscar" onclick="adicionarOuAtualizarPaciente()">Salvar Registro</button>
         </div>
       </div>
+     
 
-      <div class="box-list-get">
-        <div class="header-form">
-        <h2>Lista de Pacientes</h2>
-        </div>
-        <button  class= "button-body" onclick="carregarPacientes()">Atualizar Registros <i class="fa-solid fa-rotate-right"></i></button>
-        <table border="1" id="secaoTabela">
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>Nome</th>
-              <th>CPF</th>
-              <th>Telefone</th>
-              <th>Data de Nascimento</th>
-              <th>Endereço</th>
-              <th>Tipo Sanguíneo</th>
-              <th>Alergias</th>
-              <th>Ações</th>
-            </tr>
-          </thead>
-          <tbody id="tabelaPacientes"></tbody>
-        </table>
-      </div>
     </section>
 
     <footer>

@@ -1,8 +1,16 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\User\\Documents\\Nova pasta\\PacientesApi\\wwwroot\\cadastro.html",
+      "PackagePath": "staticwebassets\\cadastro.html"
+    },
+    {
       "Id": "C:\\Users\\User\\Documents\\Nova pasta\\PacientesApi\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\Nova pasta\\PacientesApi\\wwwroot\\relatorio.html",
+      "PackagePath": "staticwebassets\\relatorio.html"
     },
     {
       "Id": "C:\\Users\\User\\Documents\\Nova pasta\\PacientesApi\\wwwroot\\script.js",

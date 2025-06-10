@@ -134,3 +134,78 @@ async function filtrarPacientes() {
 }
 
 carregarPacientes();
+
+ async function carregarRelatorio() {
+      try {
+        const response = await fetch('http://localhost:5022/relatorio');
+        const data = await response.json();
+
+      
+        document.getElementById('totalPacientes').textContent = data.totalPacientes;
+        
+        
+
+
+
+        const ctxTipo = document.getElementById('tipoSanguineoChart').getContext('2d');
+        new Chart(ctxTipo, {
+          type: 'pie',
+          data: {
+            labels: tipos,
+            datasets: [{
+              label: 'Quantidade',
+              data: quantidades,
+              backgroundColor: [
+                '#4e79a7', '#f28e2b', '#e15759',
+                '#76b7b2', '#59a14f', '#edc948',
+                '#b07aa1', '#ff9da7', '#9c755f', '#bab0ab'
+              ],
+            }]
+          },
+          options: {
+            responsive: true,
+            plugins: {
+              legend: {
+                position: 'bottom',
+              }
+            }
+          }
+        });
+
+        // Gráfico Idades
+        const nomes = data.idades.map(x => x.nome);
+        const idades = data.idades.map(x => x.idade);
+
+        const ctxIdades = document.getElementById('idadesChart').getContext('2d');
+        new Chart(ctxIdades, {
+          type: 'bar',
+          data: {
+            labels: nomes,
+            datasets: [{
+              label: 'Idade',
+              data: idades,
+              backgroundColor: '#4e79a7'
+            }]
+          },
+          options: {
+            responsive: true,
+            scales: {
+              y: {
+                beginAtZero: true,
+                ticks: { stepSize: 5 }
+              }
+            },
+            plugins: {
+              legend: {
+                display: false
+              }
+            }
+          }
+        });
+
+      } catch (error) {
+        console.error('Erro ao carregar relatório:', error);
+      }
+    }
+
+    carregarRelatorio();
